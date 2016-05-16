@@ -7,19 +7,20 @@
 #include "defs.h++"
 #include "opt.h++"
 #include "ropts.h++"
+#include "point.h++"
 
 
 typedef std::list<pthread_t> thrslist;
 
 struct thrdata_t
 {
-	thrdata_t( const bool_t * IsBreak , const string_t & Path )
-			:
-			thrdata__isbreak( IsBreak ) ,
-			thrdata__path( Path )
+	thrdata_t( bool_t * IsBreak , const string_t & Path )
+		:
+		thrdata__isbreak( IsBreak ) ,
+		thrdata__path( Path )
 	{ }
 
-	const bool_t * const thrdata__isbreak;
+	bool_t * thrdata__isbreak;
 	string_t thrdata__path;
 };
 
@@ -62,6 +63,10 @@ int main( const int_t argc , const char_t * const argv[] , const char_t * const 
 			return EXIT_FAILURE;
 		}
 	}
+
+
+	ia::point p( ia::point::coord_t( 1 ) , ia::point::coord_t( 2 ) , ia::point::coord_t( 3 ) );
+	std::cout << p << std::endl;
 
 
 	// Основной цикл программы
@@ -128,6 +133,10 @@ void * readfile( void * data )
 			if ( err == EINTR )
 			{
 				continue;
+			}
+			else if ( err == EOF )
+			{
+				*( d.thrdata__isbreak ) = true;
 			}
 
 			::perror( "read" );
