@@ -1,5 +1,5 @@
-#ifndef TYPEDEFS_HPP
-#define TYPEDEFS_HPP
+#ifndef DEFS_HPP
+#define DEFS_HPP
 
 #include <cstddef>
 #include <string>
@@ -15,37 +15,37 @@ typedef char								char_t;
 typedef bool								bool_t;
 
 /// Byte , signed 8 bit
-typedef char								sbyte_t;
+typedef int8_t								sbyte_t;
 
 /// Byte , unsigned 8 bit
-typedef unsigned char						byte_t;
+typedef uint8_t								byte_t;
 
 /// Word , unsigned 16 bit
-typedef unsigned short int					word_t;
+typedef uint16_t							word_t;
 
 /// Double word , unsigned 32 bit
-typedef unsigned int						dword_t;
+typedef uint32_t							dword_t;
 
 /// Quad word , unsigned 64 bit
-typedef unsigned long long int				qword_t;
+typedef uint64_t							qword_t;
 
 /// Integer , signed 16 bit
-typedef short int							short_t;
+typedef int16_t								short_t;
 
 /// Integer , unsigned 16 bit
-typedef unsigned short int					ushort_t;
+typedef uint16_t							ushort_t;
 
 /// Integer , signed 32 bit
-typedef int									int_t;
+typedef int32_t								int_t;
 
 /// Integer , unsigned 32 bit
-typedef unsigned int						uint_t;
+typedef uint32_t							uint_t;
 
 /// Integer , signed 64 bit
-typedef long long int						long_t;
+typedef int64_t								long_t;
 
 /// Integer , unsigned 64 bit
-typedef unsigned long long int				ulong_t;
+typedef uint64_t							ulong_t;
 
 /// Floating type
 typedef float								float_t;
