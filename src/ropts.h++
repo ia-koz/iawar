@@ -20,12 +20,12 @@ namespace ia
 
 		ropts( void );
 
-		ropts( const int_t &			argc ,
-				  const char_t * const	argv[] );
+		ropts( const int_t &		argc ,
+			   const char_t * const	argv[] );
 
-		ropts( const int_t &			argc ,
-				  const char_t * const	argv[] ,
-				  const char_t * const	envp[] );
+		ropts( const int_t &		argc ,
+			   const char_t * const	argv[] ,
+			   const char_t * const	envp[] );
 
 		virtual ~ropts( void );
 
