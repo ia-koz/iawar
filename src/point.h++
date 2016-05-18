@@ -10,7 +10,7 @@ namespace ia
 	class point
 	{
 		public:
-		typedef int_t					coord_t;
+		typedef int_t			coord_t;
 
 								point( void );														// Default constructor.
 		explicit				point( const ia::point::coord_t & X ,
@@ -20,6 +20,26 @@ namespace ia
 								point( const point & That );										// Copy constructor.
 
 		virtual					~point( void );														// Virtual destructor.
+
+
+		ia::point::coord_t		x( void ) const;													// Return X-coordinate.
+		void					x( const ia::point::coord_t & Value );								// Set X-coordinate.
+
+		ia::point::coord_t		y( void ) const;													// Return Y-coordinate.
+		void					y( const ia::point::coord_t & Value );								// Set Y-coordinate.
+
+		ia::point::coord_t		z( void ) const;													// Return Z-coordinate.
+		void					z( const ia::point::coord_t & Value );								// Set Z-coordinate.
+
+
+		void					ass( const ia::point & That );										// Assignment That to *this.
+		void					add( const ia::point & That );										// Addition That to *this.
+		void					sub( const ia::point & That );										// Subtraction That to *this.
+
+		bool_t					eqa( const ia::point & That ) const;								// Equality That to *this.
+
+		string_t				str( void ) const;													// Return string representation.
+
 
 		ia::point &				operator =( const ia::point & That );								// Assignment operator.
 
