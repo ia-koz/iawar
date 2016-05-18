@@ -22,6 +22,9 @@ namespace ia
 		typedef std::shared_ptr<ia::squad>	squad_sptr;
 
 
+		virtual							~unit( void ) {};
+
+
 		virtual string_t				name( void ) const								= 0;		// Return name string representation.
 		virtual string_t				type( void ) const								= 0;		// Return type string representation.
 
