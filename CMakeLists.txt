@@ -12,5 +12,5 @@ set(SOURCE_FILES
 		src/point.h++
 		src/point.c++
 		src/unit.h++
-		src/main.c++)
+		src/main.c++ src/unit.c++)
 add_executable(iawar ${SOURCE_FILES})

@@ -67,6 +67,13 @@ int main( const int_t argc , const char_t * const argv[] , const char_t * const 
 
 	ia::point p( ia::point::coord_t( 1 ) , ia::point::coord_t( 2 ) , ia::point::coord_t( 3 ) );
 	std::cout << p << std::endl;
+	ia::point pp( ia::point::coord_t( 1 ) , ia::point::coord_t( 2 ) , ia::point::coord_t( 3 ) );
+	std::cout << pp << std::endl;
+	std::cout << ( p + pp ) << std::endl;
+	std::cout << ( p - pp ) << std::endl;
+	std::cout << ( p == pp ) << std::endl;
+	std::cout << ( p != pp ) << std::endl;
+	std::cout << ( p = pp + p ) << std::endl;
 
 
 	// Основной цикл программы
