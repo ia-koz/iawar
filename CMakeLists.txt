@@ -15,5 +15,9 @@ set(SOURCE_FILES
         src/unit.c++
         src/ground.h++
         src/ground.c++
+        src/air.h++
+        src/air.c++
+        src/squad.h++
+        src/squad.c++
         src/main.c++)
 add_executable(iawar ${SOURCE_FILES})

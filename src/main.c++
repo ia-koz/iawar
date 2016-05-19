@@ -8,6 +8,10 @@
 #include "opt.h++"
 #include "ropts.h++"
 #include "point.h++"
+#include "unit.h++"
+#include "ground.h++"
+#include "air.h++"
+#include "squad.h++"
 
 
 typedef std::list<pthread_t> thrslist;

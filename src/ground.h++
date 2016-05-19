@@ -13,6 +13,9 @@ namespace ia
 		virtual							~ground( void ) {};
 
 
+		virtual ia::unit::ground_sptr	theground( void )								override;
+
+
 		virtual void					forward( void )									= 0;		// Go one step forward.
 		virtual void					back( void )									= 0;		// Go one step back.
 		virtual void					left( void )									= 0;		// Go one step left.

@@ -1,5 +1,10 @@
-//
-// Created by psychophysic on 18.05.16.
-//
-
 #include "ground.h++"
+
+
+namespace ia
+{
+	ia::unit::ground_sptr ground::theground( void )
+	{
+		return ia::unit::ground_sptr( this );
+	}
+}
